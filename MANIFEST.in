@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include idmshealtycare *.css
+recursive-include idmshealtycare *.csv
+recursive-include idmshealtycare *.html
+recursive-include idmshealtycare *.ico
+recursive-include idmshealtycare *.js
+recursive-include idmshealtycare *.json
+recursive-include idmshealtycare *.md
+recursive-include idmshealtycare *.png
+recursive-include idmshealtycare *.py
+recursive-include idmshealtycare *.svg
+recursive-include idmshealtycare *.txt
+recursive-exclude idmshealtycare *.pyc
