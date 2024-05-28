@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-16 23:43:25.783084",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "kode_unit",
+  "kode_antrian",
+  "nama_unit",
+  "kategori_unitpoli",
+  "jenis_pelayanan",
+  "depo_tujuan_resep",
+  "column_break_fqtu",
+  "kepala_unit",
+  "lantai",
+  "gedung"
+ ],
+ "fields": [
+  {
+   "fieldname": "kode_unit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kode Unit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kode_antrian",
+   "fieldtype": "Data",
+   "label": "Kode Antrian"
+  },
+  {
+   "fieldname": "nama_unit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Unit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gedung",
+   "fieldtype": "Data",
+   "label": "Gedung"
+  },
+  {
+   "fieldname": "lantai",
+   "fieldtype": "Data",
+   "label": "Lantai"
+  },
+  {
+   "fieldname": "kategori_unitpoli",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": " Kategori Unit/Poli",
+   "options": "\nPELAYANAN\nPENDUKUNG\nINVENTORY\nFARMASI\nDEPO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jenis_pelayanan",
+   "fieldtype": "Select",
+   "label": "Jenis Pelayanan"
+  },
+  {
+   "fieldname": "depo_tujuan_resep",
+   "fieldtype": "Data",
+   "label": "Depo Tujuan Resep"
+  },
+  {
+   "fieldname": "column_break_fqtu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kepala_unit",
+   "fieldtype": "Link",
+   "label": "Kepala Unit",
+   "options": "Employee"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-16 23:52:58.202056",
+ "modified_by": "Administrator",
+ "module": "Configuration",
+ "name": "Unit dan Tarif Masuk",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,551 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-16 23:10:51.842230",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_jsfj",
+  "patient_type",
+  "patient",
+  "registration_date",
+  "service_type",
+  "medical_department",
+  "cara_datang",
+  "payment",
+  "doctor",
+  "amended_from",
+  "form_pcare_tab",
+  "validasi_section",
+  "validate_type",
+  "nomor_peserta",
+  "validate",
+  "column_break_xwwa",
+  "column_break_wstq",
+  "bpjs_section",
+  "kdproviderpeserta",
+  "nama_provider",
+  "tanggal_daftar",
+  "no_kartu",
+  "kode_poli",
+  "rujuk_balik",
+  "nama_tkp",
+  "prb",
+  "prolanis",
+  "kunjungan_sakit",
+  "column_break_fflz",
+  "sistole",
+  "diastole",
+  "berat_badan",
+  "tinggi_badan",
+  "reps_rate",
+  "lingkar_perut",
+  "heart_rate",
+  "keluhan",
+  "form_vclaim_tab",
+  "form_vclaim_section",
+  "validasi_column",
+  "cari_berdasarkan",
+  "validasi_peserta",
+  "validasi_button",
+  "column_break_zajj",
+  "column_break_xlmj",
+  "section_break_kpwi",
+  "validasi_",
+  "tanggal_masuk",
+  "tanggal_keluar",
+  "no_spri",
+  "dpjp",
+  "katarak",
+  "cob",
+  "catatan_sep",
+  "column_break_auck",
+  "no_sep",
+  "nik",
+  "nama",
+  "kelamin",
+  "tanggal_lahir",
+  "alamat",
+  "no_telepon",
+  "no_kartu_bpjs",
+  "no_rm",
+  "jenis_rawat",
+  "diagnosa_awal",
+  "kode_icd",
+  "jenis_peserta",
+  "data_rujukan_column",
+  "rujukan",
+  "no_rujukan",
+  "faskes",
+  "kode_faskes",
+  "tanggal_rujukan",
+  "prb_vclaim"
+ ],
+ "fields": [
+  {
+   "fieldname": "registration_date",
+   "fieldtype": "Date",
+   "label": "Registration Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Patient",
+   "reqd": 1
+  },
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Doctor",
+   "options": "Doctor",
+   "reqd": 1
+  },
+  {
+   "default": "Datang Sendiri",
+   "fieldname": "cara_datang",
+   "fieldtype": "Select",
+   "label": "Cara Datang",
+   "options": "\nDatang Sendiri\nDibawa Dokter\nKasus Polisi\nRujukan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment",
+   "fieldtype": "Link",
+   "label": "Payment",
+   "options": "Insurance Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patient_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Patient Type",
+   "options": "General\nBPJS",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_jsfj",
+   "fieldtype": "Section Break",
+   "label": "Registration Details"
+  },
+  {
+   "fieldname": "validate_type",
+   "fieldtype": "Select",
+   "label": "Validate Type",
+   "options": "\nNIK\nNo BPJS"
+  },
+  {
+   "fieldname": "bpjs_section",
+   "fieldtype": "Section Break",
+   "label": "Form PCare"
+  },
+  {
+   "fieldname": "nomor_peserta",
+   "fieldtype": "Data",
+   "label": "Nomor Peserta / NIK"
+  },
+  {
+   "fieldname": "validate",
+   "fieldtype": "Button",
+   "label": "Validate"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Registrations",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "kdproviderpeserta",
+   "fieldtype": "Data",
+   "label": "Kode Provider Peserta",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nama_provider",
+   "fieldtype": "Data",
+   "label": "Nama Provider",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tanggal_daftar",
+   "fieldtype": "Date",
+   "label": "Tanggal Rawat / Masuk",
+   "read_only": 1
+  },
+  {
+   "fieldname": "no_kartu",
+   "fieldtype": "Data",
+   "label": "No Kartu",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rujuk_balik",
+   "fieldtype": "Int",
+   "label": "Rujuk Balik"
+  },
+  {
+   "fieldname": "nama_tkp",
+   "fieldtype": "Select",
+   "label": "Nama TKP",
+   "options": "\n10-RJTP\n20-RITP\n50-Promotif"
+  },
+  {
+   "fieldname": "column_break_fflz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kode_poli",
+   "fieldtype": "Link",
+   "label": "Kode Poli",
+   "options": "Medical Department"
+  },
+  {
+   "default": "0",
+   "fieldname": "kunjungan_sakit",
+   "fieldtype": "Check",
+   "label": "Kunjungan Sakit"
+  },
+  {
+   "fieldname": "sistole",
+   "fieldtype": "Float",
+   "label": "Sistole",
+   "precision": "0"
+  },
+  {
+   "fieldname": "diastole",
+   "fieldtype": "Float",
+   "label": "Diastole",
+   "precision": "0"
+  },
+  {
+   "fieldname": "berat_badan",
+   "fieldtype": "Float",
+   "label": "Berat Badan",
+   "precision": "0"
+  },
+  {
+   "fieldname": "tinggi_badan",
+   "fieldtype": "Float",
+   "label": "Tinggi Badan",
+   "precision": "0"
+  },
+  {
+   "fieldname": "reps_rate",
+   "fieldtype": "Float",
+   "label": "Reps Rate",
+   "precision": "0"
+  },
+  {
+   "fieldname": "lingkar_perut",
+   "fieldtype": "Float",
+   "label": "Lingkar Perut",
+   "precision": "0"
+  },
+  {
+   "fieldname": "heart_rate",
+   "fieldtype": "Float",
+   "label": "Heart Rate",
+   "precision": "0"
+  },
+  {
+   "fieldname": "keluhan",
+   "fieldtype": "Data",
+   "label": "Keluhan"
+  },
+  {
+   "fieldname": "prb",
+   "fieldtype": "Select",
+   "label": "PRB",
+   "options": "\nHipertensi\nDiabetes"
+  },
+  {
+   "default": "0",
+   "fieldname": "prolanis",
+   "fieldtype": "Check",
+   "label": "Prolanis"
+  },
+  {
+   "fieldname": "form_vclaim_section",
+   "fieldtype": "Section Break",
+   "label": "Validasi Data Peserta BPJS VClaim"
+  },
+  {
+   "fieldname": "validasi_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cari_berdasarkan",
+   "fieldtype": "Select",
+   "label": "Cari Berdasarkan ",
+   "options": "\nNo Rujukan\nNo SEP"
+  },
+  {
+   "description": "NO SEP / NO Rujukan",
+   "fieldname": "validasi_peserta",
+   "fieldtype": "Data",
+   "label": "Validasi Peserta"
+  },
+  {
+   "fieldname": "form_pcare_tab",
+   "fieldtype": "Tab Break",
+   "label": "Form Pcare"
+  },
+  {
+   "fieldname": "validasi_section",
+   "fieldtype": "Section Break",
+   "label": "Validasi Data Peserta BPJS PCare"
+  },
+  {
+   "fieldname": "form_vclaim_tab",
+   "fieldtype": "Tab Break",
+   "label": "Form VClaim"
+  },
+  {
+   "fieldname": "column_break_xwwa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wstq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zajj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xlmj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "validasi_button",
+   "fieldtype": "Button",
+   "label": "Validasi"
+  },
+  {
+   "fieldname": "section_break_kpwi",
+   "fieldtype": "Section Break",
+   "label": "Form VClaim"
+  },
+  {
+   "fieldname": "tanggal_masuk",
+   "fieldtype": "Date",
+   "label": "Tanggal Masuk"
+  },
+  {
+   "fieldname": "tanggal_keluar",
+   "fieldtype": "Date",
+   "label": "Tanggal Keluar"
+  },
+  {
+   "fieldname": "no_spri",
+   "fieldtype": "Data",
+   "label": "No SPRI"
+  },
+  {
+   "fieldname": "dpjp",
+   "fieldtype": "Autocomplete",
+   "label": "DPJP"
+  },
+  {
+   "fieldname": "katarak",
+   "fieldtype": "Select",
+   "label": "Katarak",
+   "options": "\nYa\nTidak"
+  },
+  {
+   "fieldname": "cob",
+   "fieldtype": "Select",
+   "label": "COB",
+   "options": "\nYa\nTidak"
+  },
+  {
+   "fieldname": "catatan_sep",
+   "fieldtype": "Data",
+   "label": "Catatan SEP"
+  },
+  {
+   "fieldname": "column_break_auck",
+   "fieldtype": "Column Break",
+   "label": "Verifikasi"
+  },
+  {
+   "fieldname": "no_sep",
+   "fieldtype": "Data",
+   "label": "No SEP",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nik",
+   "fieldtype": "Data",
+   "label": "NIK",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama",
+   "read_only": 1
+  },
+  {
+   "fieldname": "kelamin",
+   "fieldtype": "Data",
+   "label": "Kelamin",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tanggal_lahir",
+   "fieldtype": "Data",
+   "label": "Tanggal Lahir",
+   "read_only": 1
+  },
+  {
+   "fieldname": "alamat",
+   "fieldtype": "Data",
+   "label": "Alamat",
+   "read_only": 1
+  },
+  {
+   "fieldname": "no_telepon",
+   "fieldtype": "Data",
+   "label": "No Telepon",
+   "read_only": 1
+  },
+  {
+   "fieldname": "no_kartu_bpjs",
+   "fieldtype": "Data",
+   "label": "No Kartu BPJS",
+   "read_only": 1
+  },
+  {
+   "fieldname": "no_rm",
+   "fieldtype": "Data",
+   "label": "No RM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "jenis_rawat",
+   "fieldtype": "Data",
+   "label": "Jenis Rawat",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diagnosa_awal",
+   "fieldtype": "Data",
+   "label": "Diagnosa Awal",
+   "read_only": 1
+  },
+  {
+   "fieldname": "kode_icd",
+   "fieldtype": "Data",
+   "label": "Kode ICD",
+   "read_only": 1
+  },
+  {
+   "fieldname": "jenis_peserta",
+   "fieldtype": "Data",
+   "label": "Jenis Peserta",
+   "read_only": 1
+  },
+  {
+   "fieldname": "data_rujukan_column",
+   "fieldtype": "Column Break",
+   "label": "Data Rujukan"
+  },
+  {
+   "fieldname": "rujukan",
+   "fieldtype": "Select",
+   "label": "Rujukan",
+   "options": "\nYa\nTidak",
+   "read_only": 1
+  },
+  {
+   "fieldname": "no_rujukan",
+   "fieldtype": "Data",
+   "label": "No Rujukan",
+   "read_only": 1
+  },
+  {
+   "fieldname": "validasi_",
+   "fieldtype": "Column Break",
+   "label": "Validasi"
+  },
+  {
+   "fieldname": "faskes",
+   "fieldtype": "Data",
+   "label": "Faskes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "kode_faskes",
+   "fieldtype": "Data",
+   "label": "Kode Faskes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tanggal_rujukan",
+   "fieldtype": "Data",
+   "label": "Tanggal Rujukan",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prb_vclaim",
+   "fieldtype": "Data",
+   "label": "PRB",
+   "read_only": 1
+  },
+  {
+   "fieldname": "medical_department",
+   "fieldtype": "Link",
+   "label": "Medical Department",
+   "options": "Medical Department"
+  },
+  {
+   "fieldname": "service_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Service Type",
+   "options": "\nPELAYANAN\nPENDUKUNG\nINVENTORY\nFARMASI\nDEPO",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-05-29 01:09:43.760558",
+ "modified_by": "Administrator",
+ "module": "Admission",
+ "name": "Registrations",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

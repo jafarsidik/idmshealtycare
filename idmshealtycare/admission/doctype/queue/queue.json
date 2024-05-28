@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-29 01:45:59.907850",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "medical_department",
+  "flag_number",
+  "current_number",
+  "next_number",
+  "column_break_zura",
+  "qr_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "medical_department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Medical Department",
+   "options": "Medical Department",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "medical_department.kode_antrian",
+   "fieldname": "flag_number",
+   "fieldtype": "Data",
+   "label": "Flag Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "current_number",
+   "fieldtype": "Data",
+   "label": "Current Number"
+  },
+  {
+   "fieldname": "next_number",
+   "fieldtype": "Data",
+   "label": "Next Number"
+  },
+  {
+   "fieldname": "column_break_zura",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qr_code",
+   "fieldtype": "HTML",
+   "label": "QR Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-29 01:54:32.391326",
+ "modified_by": "Administrator",
+ "module": "Admission",
+ "name": "Queue",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

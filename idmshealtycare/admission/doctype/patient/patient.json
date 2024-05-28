@@ -1,0 +1,305 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:no_rm",
+ "creation": "2024-05-16 21:14:58.358778",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "overview_tab",
+  "overview_section",
+  "picture",
+  "no_rm_created_by",
+  "no_rm",
+  "identity_number",
+  "salutation",
+  "nick_name",
+  "full_name",
+  "email",
+  "phone_number",
+  "column_break_wddz",
+  "gender",
+  "date_of_birth",
+  "place_of_birth",
+  "blood_type",
+  "mother_name",
+  "marital_status",
+  "religion",
+  "jobs",
+  "address",
+  "insurance_tab",
+  "insurence_type",
+  "column_break_jlse",
+  "insurance_number",
+  "personal_tab",
+  "members_of",
+  "nipnrp",
+  "corp",
+  "ranked",
+  "position",
+  "column_break_vsjk",
+  "person_in_charge",
+  "name_of_pic",
+  "jobs_of_pic",
+  "adreess_of_pic"
+ ],
+ "fields": [
+  {
+   "fieldname": "overview_section",
+   "fieldtype": "Section Break",
+   "label": "Overview"
+  },
+  {
+   "fieldname": "picture",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Picture"
+  },
+  {
+   "default": "System",
+   "fieldname": "no_rm_created_by",
+   "fieldtype": "Select",
+   "label": "No RM Created By",
+   "options": "\nSystem\nManualy",
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_rm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "No RM",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "identity_number",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Identity Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "salutation",
+   "fieldtype": "Link",
+   "label": "Salutation",
+   "options": "Salutation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nick_name",
+   "fieldtype": "Data",
+   "label": "Nick Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Gender",
+   "options": "Gender",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_wddz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date Of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "place_of_birth",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Place Of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mother_name",
+   "fieldtype": "Data",
+   "label": "Mother Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "\nSingle\nMarried\nDivorced\nWidowed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "overview_tab",
+   "fieldtype": "Tab Break",
+   "label": "Overview"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Phone Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Select",
+   "label": "Religion",
+   "options": "\nISLAM\nKRISTEN\nKATOLIK\nHINDU\nBUDHA\nKONG HU CU\nKEPERCAYAAN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jobs",
+   "fieldtype": "Data",
+   "label": "Jobs",
+   "reqd": 1
+  },
+  {
+   "fieldname": "insurance_tab",
+   "fieldtype": "Tab Break",
+   "label": "Insurance"
+  },
+  {
+   "fieldname": "insurence_type",
+   "fieldtype": "Link",
+   "label": "Insurence Type",
+   "options": "Insurance Type",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "insurance_number",
+   "fieldtype": "Data",
+   "label": "Insurance Number"
+  },
+  {
+   "fieldname": "personal_tab",
+   "fieldtype": "Tab Break",
+   "label": "Personal"
+  },
+  {
+   "fieldname": "members_of",
+   "fieldtype": "Select",
+   "label": "Members Of",
+   "options": "\nTNI\nPOLRI\nPNS\nDINAS\nPusrehab\nSETJEN KEMHAN\nUNHAN\nKEMHAN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "corp",
+   "fieldtype": "Data",
+   "label": "Corp"
+  },
+  {
+   "fieldname": "ranked",
+   "fieldtype": "Data",
+   "label": "Ranked"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position"
+  },
+  {
+   "fieldname": "nipnrp",
+   "fieldtype": "Data",
+   "label": "NIP/NRP"
+  },
+  {
+   "fieldname": "column_break_vsjk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "person_in_charge",
+   "fieldtype": "Select",
+   "label": "Person In Charge",
+   "options": "\nDIRI SENDIRI\nAYAH\nIBU\nISTRI\nSUAMI\nSAUDARA\nLAIN-LAIN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "name_of_pic",
+   "fieldtype": "Data",
+   "label": "Name of PIC"
+  },
+  {
+   "fieldname": "jobs_of_pic",
+   "fieldtype": "Data",
+   "label": "Jobs Of PIC"
+  },
+  {
+   "fieldname": "adreess_of_pic",
+   "fieldtype": "Small Text",
+   "label": "Adreess Of PIC"
+  },
+  {
+   "fieldname": "column_break_jlse",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "blood_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Blood Type",
+   "reqd": 1
+  }
+ ],
+ "image_field": "picture",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "make_attachments_public": 1,
+ "modified": "2024-05-16 23:05:00.063897",
+ "modified_by": "Administrator",
+ "module": "Admission",
+ "name": "Patient",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
