@@ -45,9 +45,37 @@
   "validasi_column",
   "cari_berdasarkan",
   "validasi_peserta",
-  "validasi",
+  "validasi_button",
   "column_break_zajj",
-  "column_break_xlmj"
+  "column_break_xlmj",
+  "section_break_kpwi",
+  "validasi_",
+  "tanggal_masuk",
+  "tanggal_keluar",
+  "no_spri",
+  "dpjp",
+  "katarak",
+  "cob",
+  "catatan_sep",
+  "column_break_auck",
+  "no_sep",
+  "nik",
+  "nama",
+  "kelamin",
+  "tanggal_lahir",
+  "alamat",
+  "no_telepon",
+  "no_kartu_bpjs",
+  "no_rm",
+  "jenis_rawat",
+  "diagnosa_awal",
+  "kode_icd",
+  "jenis_peserta",
+  "data_rujukan_column",
+  "rujukan",
+  "no_rujukan",
+  "faskes",
+  "kode_faskes"
  ],
  "fields": [
   {
@@ -280,11 +308,6 @@
    "label": "Form VClaim"
   },
   {
-   "fieldname": "validasi",
-   "fieldtype": "Button",
-   "label": "Validasi"
-  },
-  {
    "fieldname": "column_break_xwwa",
    "fieldtype": "Column Break"
   },
@@ -299,12 +322,177 @@
   {
    "fieldname": "column_break_xlmj",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "validasi_button",
+   "fieldtype": "Button",
+   "label": "Validasi"
+  },
+  {
+   "fieldname": "section_break_kpwi",
+   "fieldtype": "Section Break",
+   "label": "Form VClaim"
+  },
+  {
+   "fieldname": "tanggal_masuk",
+   "fieldtype": "Date",
+   "label": "Tanggal Masuk"
+  },
+  {
+   "fieldname": "tanggal_keluar",
+   "fieldtype": "Date",
+   "label": "Tanggal Keluar"
+  },
+  {
+   "fieldname": "no_spri",
+   "fieldtype": "Data",
+   "label": "No SPRI"
+  },
+  {
+   "fieldname": "dpjp",
+   "fieldtype": "Autocomplete",
+   "label": "DPJP"
+  },
+  {
+   "fieldname": "katarak",
+   "fieldtype": "Select",
+   "label": "Katarak",
+   "options": "\nYa\nTidak"
+  },
+  {
+   "fieldname": "cob",
+   "fieldtype": "Select",
+   "label": "COB",
+   "options": "\nYa\nTidak"
+  },
+  {
+   "fieldname": "catatan_sep",
+   "fieldtype": "Data",
+   "label": "Catatan SEP"
+  },
+  {
+   "fieldname": "column_break_auck",
+   "fieldtype": "Column Break",
+   "label": "Verifikasi"
+  },
+  {
+   "fieldname": "no_sep",
+   "fieldtype": "Data",
+   "label": "No SEP",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nik",
+   "fieldtype": "Data",
+   "label": "NIK",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Data",
+   "label": "Nama",
+   "read_only": 1
+  },
+  {
+   "fieldname": "kelamin",
+   "fieldtype": "Data",
+   "label": "Kelamin",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tanggal_lahir",
+   "fieldtype": "Data",
+   "label": "Tanggal Lahir",
+   "read_only": 1
+  },
+  {
+   "fieldname": "alamat",
+   "fieldtype": "Data",
+   "label": "Alamat",
+   "read_only": 1
+  },
+  {
+   "fieldname": "no_telepon",
+   "fieldtype": "Data",
+   "label": "No Telepon",
+   "read_only": 1
+  },
+  {
+   "fieldname": "no_kartu_bpjs",
+   "fieldtype": "Data",
+   "label": "No Kartu BPJS",
+   "read_only": 1
+  },
+  {
+   "fieldname": "no_rm",
+   "fieldtype": "Data",
+   "label": "No RM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "jenis_rawat",
+   "fieldtype": "Data",
+   "label": "Jenis Rawat",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diagnosa_awal",
+   "fieldtype": "Data",
+   "label": "Diagnosa Awal",
+   "read_only": 1
+  },
+  {
+   "fieldname": "kode_icd",
+   "fieldtype": "Data",
+   "label": "Kode ICD",
+   "read_only": 1
+  },
+  {
+   "fieldname": "jenis_peserta",
+   "fieldtype": "Data",
+   "label": "Jenis Peserta",
+   "read_only": 1
+  },
+  {
+   "fieldname": "data_rujukan_column",
+   "fieldtype": "Column Break",
+   "label": "Data Rujukan"
+  },
+  {
+   "fieldname": "rujukan",
+   "fieldtype": "Select",
+   "label": "Rujukan",
+   "options": "\nYa\nTidak",
+   "read_only": 1
+  },
+  {
+   "fieldname": "no_rujukan",
+   "fieldtype": "Data",
+   "label": "No Rujukan",
+   "read_only": 1
+  },
+  {
+   "fieldname": "validasi_",
+   "fieldtype": "Column Break",
+   "label": "Validasi"
+  },
+  {
+   "fieldname": "faskes",
+   "fieldtype": "Data",
+   "label": "Faskes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "kode_faskes",
+   "fieldtype": "Data",
+   "label": "Kode Faskes",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-28 23:56:31.787007",
+ "modified": "2024-05-29 00:19:33.453379",
  "modified_by": "Administrator",
  "module": "Admission",
  "name": "Registration Emergency",
