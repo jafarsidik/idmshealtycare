@@ -1,0 +1,180 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{kode_unit}-{nama_unit}",
+ "creation": "2024-05-16 23:43:25.783084",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "kode_unit",
+  "kode_antrian",
+  "nama_unit",
+  "kategori_unitpoli",
+  "jenis_pelayanan",
+  "depo_tujuan_resep",
+  "column_break_fqtu",
+  "kepala_unit",
+  "lantai",
+  "gedung",
+  "appointment_booking_online",
+  "active",
+  "mapping_bpjs_tab",
+  "code_and_unit_name_section",
+  "kode_unit_pcare",
+  "nama_unit_pcare",
+  "column_break_mzrp",
+  "kode_unit_vclaim_sep",
+  "nama_unit_vclaim_sep",
+  "section_break_yiwv",
+  "id_ihs",
+  "validate"
+ ],
+ "fields": [
+  {
+   "fieldname": "kode_unit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kode Unit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kode_antrian",
+   "fieldtype": "Data",
+   "label": "Kode Antrian"
+  },
+  {
+   "fieldname": "nama_unit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nama Unit",
+   "reqd": 1
+  },
+  {
+   "description": "Opsi kategori untuk unit yang digunakan pada modul pelayanan (RJ, IGD, RI, MCU, LAB dll). <br> Opsi kategori untuk unit yang digunakan sebagai pendukung (diluar pelayanan). Contoh : Unit IPSRS (Sarana dan Prasarana).<br> Opsi kategori untuk unit yang digunakan pada modul Apotek dan Farmasi. <br>Opsi kategori untuk unit yang digunakan sebagai DEPO pengambilan BHP",
+   "fieldname": "kategori_unitpoli",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": " Kategori Unit/Poli",
+   "options": "\nPELAYANAN\nPENDUKUNG\nINVENTORY\nFARMASI\nDEPO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jenis_pelayanan",
+   "fieldtype": "Select",
+   "label": "Jenis Pelayanan",
+   "options": "\nIGD\nRAWAT JALAN\nRAWAT INAP\nMCU\nLAB\nRADIOLOGY\nPENJUALAN"
+  },
+  {
+   "fieldname": "depo_tujuan_resep",
+   "fieldtype": "Data",
+   "label": "Depo Tujuan Resep"
+  },
+  {
+   "fieldname": "column_break_fqtu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kepala_unit",
+   "fieldtype": "Link",
+   "label": "Kepala Unit",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "lantai",
+   "fieldtype": "Data",
+   "label": "Lantai"
+  },
+  {
+   "fieldname": "gedung",
+   "fieldtype": "Data",
+   "label": "Gedung"
+  },
+  {
+   "fieldname": "mapping_bpjs_tab",
+   "fieldtype": "Tab Break",
+   "label": "Mapping BPJS"
+  },
+  {
+   "fieldname": "code_and_unit_name_section",
+   "fieldtype": "Section Break",
+   "label": "Code and Unit Name "
+  },
+  {
+   "fieldname": "kode_unit_pcare",
+   "fieldtype": "Data",
+   "label": "Kode Unit Pcare"
+  },
+  {
+   "fieldname": "nama_unit_pcare",
+   "fieldtype": "Data",
+   "label": "Nama Unit Pcare"
+  },
+  {
+   "fieldname": "column_break_mzrp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kode_unit_vclaim_sep",
+   "fieldtype": "Data",
+   "label": "Kode Unit Vclaim (SEP)"
+  },
+  {
+   "fieldname": "nama_unit_vclaim_sep",
+   "fieldtype": "Data",
+   "label": "Nama Unit Vclaim (SEP)"
+  },
+  {
+   "default": "0",
+   "fieldname": "appointment_booking_online",
+   "fieldtype": "Check",
+   "label": "Appointment / Booking Online"
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "section_break_yiwv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "id_ihs",
+   "fieldtype": "Data",
+   "label": "ID IHS"
+  },
+  {
+   "fieldname": "validate",
+   "fieldtype": "Button",
+   "label": "Validate"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-28 22:11:17.668338",
+ "modified_by": "Administrator",
+ "module": "Admission",
+ "name": "Medical Department",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

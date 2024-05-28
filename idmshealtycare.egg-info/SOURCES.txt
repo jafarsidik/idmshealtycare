@@ -12,6 +12,13 @@ idmshealtycare.egg-info/SOURCES.txt
 idmshealtycare.egg-info/dependency_links.txt
 idmshealtycare.egg-info/not-zip-safe
 idmshealtycare.egg-info/top_level.txt
+idmshealtycare/admisi/__init__.py
+idmshealtycare/admisi/doctype/__init__.py
+idmshealtycare/admisi/doctype/pasien/__init__.py
+idmshealtycare/admisi/doctype/pasien/pasien.js
+idmshealtycare/admisi/doctype/pasien/pasien.json
+idmshealtycare/admisi/doctype/pasien/pasien.py
+idmshealtycare/admisi/doctype/pasien/test_pasien.py
 idmshealtycare/config/__init__.py
 idmshealtycare/config/desktop.py
 idmshealtycare/config/docs.py

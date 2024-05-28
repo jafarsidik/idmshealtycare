@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{doctor}-{schedule_name}",
+ "creation": "2024-05-28 20:51:04.274787",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "schedule_name",
+  "doctor",
+  "medical_department",
+  "column_break_lhzm",
+  "disabled",
+  "allow_appointment",
+  "allow_video_converence",
+  "doctor_schedule_time_slot_section",
+  "doctor_schedule_time_slots"
+ ],
+ "fields": [
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Doctor",
+   "options": "Doctor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "schedule_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Schedule Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_lhzm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_appointment",
+   "fieldtype": "Check",
+   "label": "Allow Appointment"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_video_converence",
+   "fieldtype": "Check",
+   "label": "Allow Video Converence"
+  },
+  {
+   "fieldname": "doctor_schedule_time_slot_section",
+   "fieldtype": "Section Break",
+   "label": "Doctor Schedule Time Slot"
+  },
+  {
+   "fieldname": "doctor_schedule_time_slots",
+   "fieldtype": "Table",
+   "label": "Doctor Schedule Time Slots",
+   "options": "Doctor Schedule Time Slot"
+  },
+  {
+   "fieldname": "medical_department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Medical Department",
+   "options": "Medical Department",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-28 22:22:41.042409",
+ "modified_by": "Administrator",
+ "module": "Admission",
+ "name": "Doctor Schedule",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
