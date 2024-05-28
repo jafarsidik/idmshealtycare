@@ -1,7 +1,7 @@
 // Copyright (c) 2024, PT IDMS and contributors
 // For license information, please see license.txt
 
-// frappe.ui.form.on("Registration Emergency", {
+// frappe.ui.form.on("Patient Appointment", {
 // 	refresh(frm) {
 
 // 	},

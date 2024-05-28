@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:booking_code",
+ "creation": "2024-05-29 01:12:25.041315",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_smor",
+  "booking_code",
+  "channel_appointment",
+  "patient",
+  "medical_department",
+  "doctor",
+  "appointment_date",
+  "check_avaibility",
+  "amended_from",
+  "column_break_zrow",
+  "mjkn_section",
+  "jenis_kunjungan"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_smor",
+   "fieldtype": "Section Break",
+   "label": "Detail Appointment"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Patient Appointment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "channel_appointment",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Channel Appointment",
+   "options": "\nMobile Apps\nWeb Apps\nMJKN\nWhatsapp\nTelegram\nOn The Spot",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Patient",
+   "options": "Patient",
+   "reqd": 1
+  },
+  {
+   "fieldname": "medical_department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Medical Department",
+   "options": "Medical Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "label": "Doctor",
+   "options": "Doctor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "appointment_date",
+   "fieldtype": "Date",
+   "label": "Appointment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "check_avaibility",
+   "fieldtype": "Button",
+   "label": "Check Avaibility"
+  },
+  {
+   "fieldname": "booking_code",
+   "fieldtype": "Read Only",
+   "label": "Booking Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "mjkn_section",
+   "fieldtype": "Section Break",
+   "label": "MJKN"
+  },
+  {
+   "description": "1 (Rujukan FKTP) 2 (Rujukan Internal) 3 (Kontrol) 4 (Rujukan Antar RS)",
+   "fieldname": "jenis_kunjungan",
+   "fieldtype": "Select",
+   "label": "Jenis Kunjungan",
+   "options": "\n1\n2\n3\n4"
+  },
+  {
+   "fieldname": "column_break_zrow",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-05-29 01:33:01.321983",
+ "modified_by": "Administrator",
+ "module": "Admission",
+ "name": "Patient Appointment",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

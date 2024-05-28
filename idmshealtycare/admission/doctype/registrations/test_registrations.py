@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestRegistrationEmergency(FrappeTestCase):
+class TestRegistrations(FrappeTestCase):
 	pass

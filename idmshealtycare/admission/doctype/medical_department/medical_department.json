@@ -64,7 +64,7 @@
    "fieldname": "jenis_pelayanan",
    "fieldtype": "Select",
    "label": "Jenis Pelayanan",
-   "options": "\nIGD\nRAWAT JALAN\nRAWAT INAP\nMCU\nLAB\nRADIOLOGY\nPENJUALAN"
+   "options": "\nIGD\nRawat Jalan\nRawat Inap\nMCU\nLaboratorium\nRadiologi\nPatalogi Anatomi\nBedah\nHemodialisa\nIPRS"
   },
   {
    "fieldname": "depo_tujuan_resep",
@@ -154,11 +154,12 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-28 22:11:17.668338",
+ "modified": "2024-05-29 01:07:25.147370",
  "modified_by": "Administrator",
  "module": "Admission",
  "name": "Medical Department",
  "naming_rule": "Expression",
+ "nsm_parent_field": "parent_medical_department",
  "owner": "Administrator",
  "permissions": [
   {
@@ -176,5 +177,8 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }

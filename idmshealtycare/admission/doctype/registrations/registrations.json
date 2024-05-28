@@ -7,8 +7,10 @@
  "field_order": [
   "section_break_jsfj",
   "patient_type",
-  "registration_date",
   "patient",
+  "registration_date",
+  "service_type",
+  "medical_department",
   "cara_datang",
   "payment",
   "doctor",
@@ -75,7 +77,9 @@
   "rujukan",
   "no_rujukan",
   "faskes",
-  "kode_faskes"
+  "kode_faskes",
+  "tanggal_rujukan",
+  "prb_vclaim"
  ],
  "fields": [
   {
@@ -156,7 +160,7 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Registration Emergency",
+   "options": "Registrations",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
@@ -487,15 +491,42 @@
    "fieldtype": "Data",
    "label": "Kode Faskes",
    "read_only": 1
+  },
+  {
+   "fieldname": "tanggal_rujukan",
+   "fieldtype": "Data",
+   "label": "Tanggal Rujukan",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prb_vclaim",
+   "fieldtype": "Data",
+   "label": "PRB",
+   "read_only": 1
+  },
+  {
+   "fieldname": "medical_department",
+   "fieldtype": "Link",
+   "label": "Medical Department",
+   "options": "Medical Department"
+  },
+  {
+   "fieldname": "service_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Service Type",
+   "options": "\nPELAYANAN\nPENDUKUNG\nINVENTORY\nFARMASI\nDEPO",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-29 00:19:33.453379",
+ "modified": "2024-05-29 01:09:43.760558",
  "modified_by": "Administrator",
  "module": "Admission",
- "name": "Registration Emergency",
+ "name": "Registrations",
  "owner": "Administrator",
  "permissions": [
   {
